@@ -5,8 +5,8 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen relative'>
-      <div className='flex items-center justify-between fon-[poppins] bg-white'>
+    <div className='bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] relative z-40'>
+      <div className='flex items-center justify-between font-[poppins] bg-white'>
         <img
           src='public/images/lasttttt-removebg-preview.png'
           className='w-[15vh] h-[10vh] mt-[5vh] ml-[5vh]'
@@ -49,17 +49,21 @@ function Navbar() {
           )}
         </button>
         <nav className={`lg:flex lg:flex-row lg:items-center lg:ml-[70vh] ${isOpen ? 'block' : 'hidden'}`}>
-          <ul className='flex flex-col lg:flex-row lg:gap-10'>
+          <ul className='flex flex-col lg:flex-row lg:gap-10 justify-around mr-[5vh]'>
             <li><a href='/' className='hover:text-gray-500'>Home</a></li>
-            <li><a href='/Login' className='hover:text-gray-500'>About Us</a></li>
-            <li><a href='/' className='hover:text-gray-500'>Service</a></li>
+            <li><a href='/About' className='hover:text-gray-500'>About Us</a></li>
+            <li><a href='/Service' className='hover:text-gray-500'>Service</a></li>
             <li><a href='/' className='hover:text-gray-500'>Available</a></li>
-            <li><a href='/' className='hover:text-gray-500'>Contact Us</a></li>
+            <li><a href='/Contact' className='hover:text-gray-500'>Contact Us</a></li>
             <li><a href='/' className='hover:text-gray-500'>Booking</a></li>
-          </ul>
-          <button className='bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec] ml-4 lg:ml-0'>
-  <Link to="/SignIn">Sign In</Link>
+            <button className='bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec] ml-4 lg:ml-0'>
+  <Link to="/Auth">Register</Link>
 </button>
+<button className='bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec] ml-4 lg:ml-0'>
+  <Link to="/Login">Login</Link>
+</button>
+          </ul>
+  
         </nav>
       </div>
     </div>

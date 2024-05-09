@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.contact-item {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contact-item:hover {
+    border:;
+    transform: translateY(-5px);
+  }
+  

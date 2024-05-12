@@ -60,7 +60,7 @@ function Navbar() {
   <Link to="/Auth">Register</Link>
 </button>
 <button className='bg-[#a6c1ee] font-sans text-white px-5 py-2 rounded-full hover:bg-[#87acec] ml-4 lg:ml-0'>
-  <Link to="/Login">Login</Link>
+  <Link to="/SignUp">Login</Link>
 </button>
           </ul>
   

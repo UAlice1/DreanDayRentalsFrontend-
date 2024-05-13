@@ -2,6 +2,7 @@ import React from 'react';
 import About  from '../assets/pages/About';
 import Service from '../assets/pages/Service';
 import Footer from '../assets/pages/Footer';
+import Available from '../assets/pages/Available';
 
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
     </div>
     <About/>
     <Service/>
+    <Available />
     <Footer/>
     </div>
   

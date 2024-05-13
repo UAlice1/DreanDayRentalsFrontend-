@@ -30,7 +30,7 @@ const About = () => {
         </div>
         <div className='w-1/3'>
           <div className='relative'>
-            <img src="public/images/c3c67f612bd57366e47e231a7566772e.jpg" alt="" className='w-64 h-full object-cover rounded-lg shadow' />
+            <img src="public/images/hall1.jpg" alt="" className='w-64 h-full object-cover rounded-lg shadow' />
             <div className='absolute inset-0 flex flex-col items-center justify-center text-white px-4 py-2 rounded'>
               <div className='mb-2 text-black'>Consulting</div>
               <div className='text-sm text-center text-black'>

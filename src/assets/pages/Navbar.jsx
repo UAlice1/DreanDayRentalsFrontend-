@@ -57,10 +57,10 @@ function Navbar() {
             <li><a href='/Contact' style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans'>Contact</a></li>
             <li><a href='/' style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans'>Booking</a></li>
             <button className='bg-[#a6c1ee] text-white px-5 py-2 font-sans rounded-full hover:bg-[#87acec] ml-4 lg:ml-0'>
-  <Link to="/Auth">Register</Link>
+  <Link to="/SignUp">Register</Link>
 </button>
 <button className='bg-[#a6c1ee] font-sans text-white px-5 py-2 rounded-full hover:bg-[#87acec] ml-4 lg:ml-0'>
-  <Link to="/SignUp">Login</Link>
+  <Link to="/Signin">Login</Link>
 </button>
           </ul>
   

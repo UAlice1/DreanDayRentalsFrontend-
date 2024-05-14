@@ -59,7 +59,7 @@ const SignUp = () => {
             return;
         } else {
             const {confirmPassword, marketingAccept, ...rest  } = user;
-            axios.post('http://localhost:3000/api/v1/contactapp/auth/signup', rest)
+            axios.post('http://localhost:5007/api_docs/#/Users/post_user_signup', rest)
             .then((response) => {
                 if (response.status === 201) {
                     

@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] relative z-40 flex flex-col lg:flex-row items-center justify-between '>
+    <div className='bg-gradient-to-t from-[#fbc2eb] fixed to-[#a6c1ee]  z-40 flex flex-col lg:flex-row items-center justify-between'>
       <div className='flex items-center justify-center lg:justify-start mb-4 lg:mb-0 bg-white'>
         <img
           src='public/images/lasttttt-removebg-preview.png'
@@ -48,7 +48,7 @@ function Navbar() {
             </svg>
           )}
         </button>
-        <nav className={`lg:flex lg:flex-row  lg:items-center lg:ml-[70vh] ${isOpen ? 'block' : 'hidden'}`}>
+        <nav className={`lg:flex lg:flex-row  lg:items-center lg:ml-[70vh] ${isOpen ? 'block' :'hidden'}`}>
           <ul className='flex flex-col lg:flex-row lg:gap-10 justify-around mr-[5vh]'>
             <li><a href='/' style={{fontWeight:500, }}  className='hover:text-gray-500 font-sans'>Home</a></li>
             <li><a href='/About' style={{fontWeight:500, }}  className='hover:text-gray-500 font-sans'>About</a></li>

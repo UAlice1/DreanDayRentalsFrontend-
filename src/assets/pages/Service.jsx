@@ -1,8 +1,8 @@
 import React from 'react';
 function Service() {
   return (
-    <div className="flex justify-center items-center h-screen">
-    <div className='justify-center items-center'>
+    <div className="flex justify-center items-center h-screen md-center p-11">
+    <div className='justify-center items-center  md:flex-row md:items-center'>
         <p className='flex justify-center text-3xl mt-10 font-sans italic'>Our Services</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center items-center mt-8'>
             <div className='bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center'>

@@ -14,7 +14,7 @@ export default function Available() {
         <a href='#' className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
       </div>
     </div>
-    {/* Repeat the card for each hall */}
+  
     <div className='card1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between'>
       <img className='w-full h-64 object-cover' src='./images/hall2.jpg' alt='Hall 2' />
       <div className='p-4 flex-grow'>
@@ -31,8 +31,7 @@ export default function Available() {
         <a href='#' className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
       </div>
     </div>
-    
-    {/* Add more cards as needed */}
+  
   </div>
 </div>
     </>

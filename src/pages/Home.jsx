@@ -9,8 +9,8 @@ function Home() {
   return (
     <div>
 
-    <div className="video-background bg-black/75 flex justify-center items-center z-0">
-      <video autoPlay muted loop id="video-background" className="absolute inset-0 w-full h-full object-cover">
+    <div className="video-background bg-black/75 flex justify-center items-center z-0 p-11">
+      <video autoPlay muted loop id="video-background" className="absolute inset-0 w-full h-full object-cover object-fit">
         <source src="/video.mp4" type="video/mp4" />
         <div className="text-center text-white flex justify-center place-content-center">
           <h2 className='wlc text-3xl'>
@@ -23,7 +23,7 @@ function Home() {
           <h2 className="wlc text-4xl text-white text-[10vh]">
             Welcome to wedding planner
           </h2><br/><br/>
-          <p className="text-4xl text-white mb-10 text-[10vh]">Dream Days Rentals</p>
+          <p className="text-4xl text-white mb-10 text-[10vh]">Dream's Day Rentals</p>
         </div>
       </div>
     </div>

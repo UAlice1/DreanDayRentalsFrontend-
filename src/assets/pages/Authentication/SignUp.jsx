@@ -42,7 +42,7 @@ const SignUp = () => {
         setUser({ ...user, [e.target.name]: e.target.value })
     }
 
-    const SignUp = (e) => {
+    const SignUp = async(e) => {
         e.preventDefault();
         
         if (user.firstName.length < 3) {
@@ -59,7 +59,7 @@ const SignUp = () => {
             return;
         } else {
             const {confirmPassword, marketingAccept, ...rest  } = user;
-            axios.post('http://localhost:5007/api_docs/#/Users/post_user_signup', rest)
+            await axios.post('', rest)
             .then((response) => {
                 if (response.status === 201) {
                     

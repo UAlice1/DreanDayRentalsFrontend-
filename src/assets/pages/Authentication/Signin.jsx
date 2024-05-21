@@ -27,7 +27,7 @@ const Signin = () => {
         setError({ title: "", description: "" });
         setMessage({ title: "", description: "" });
 
-        axios.post(`http://localhost:5007/api_docs/#/`, user)
+        axios.post(`https://dream-day-rentals-16.onrender.com/api_docs/#/Users/post_user_signin`, user)
             .then(response => {
                 if (response.status === 200) {
                     setMessage({ title: 'Success', description: response.data.message });
@@ -129,7 +129,7 @@ const Signin = () => {
                             <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
                                 <button
                                     type="submit"
-                                    className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white"
+                                    className="inline-block shrink-0 rounded-md border border-blue-600 bg-[#a6c1ee] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 dark:hover:bg-blue-700 dark:hover:text-white"
                                 >
                                     Sign in
                                 </button>

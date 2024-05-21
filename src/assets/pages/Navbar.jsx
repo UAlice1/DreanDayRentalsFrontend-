@@ -53,9 +53,9 @@ function Navbar() {
             <li><a href='/' style={{fontWeight:500, }}  className='hover:text-gray-500 font-sans'>Home</a></li>
             <li><a href='/About' style={{fontWeight:500, }}  className='hover:text-gray-500 font-sans'>About</a></li>
             <li><a href='/Service'  style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans'>Service</a></li>
-            <li><a href='/' style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans hover:underline '>Available</a></li>
+            <li><a href='/Available' style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans hover:underline '>Available</a></li>
             <li><a href='/Contact' style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans'>Contact</a></li>
-            <li><a href='/' style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans'>Booking</a></li>
+            <li><a href='/' style={{fontWeight:600, }}  className='hover:text-gray-500 font-sans'>Bookings</a></li>
             <button className='bg-[#a6c1ee] text-white  font-sans py-2 px-4 rounded hover:bg-[#87acec] ml-4 lg:ml-0'>
   <Link to="/SignUp">Register</Link>
 </button>

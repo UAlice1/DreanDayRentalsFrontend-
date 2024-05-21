@@ -2,7 +2,7 @@ const SuccessAlert = ({message}) => {
     return (
         <div
             role="alert"
-            className="rounded-xl border border-gray-100 bg-white p-4 dark:border-gray-800 dark:bg-gray-900"
+            className="rounded-xl border border-gray-100 bg-white p-11 mt-11 dark:border-gray-800 dark:bg-gray-900"
         >
             <div className="flex items-start gap-4">
                 <span className="text-green-600">
@@ -25,7 +25,7 @@ const SuccessAlert = ({message}) => {
                 <div className="flex-1">
                     <strong className="block font-medium text-gray-900 dark:text-white"> {message.title} </strong>
 
-                    <p className="mt-1 text-sm text-gray-700 dark:text-gray-200">
+                    <p className="mt-32 text-sm text-gray-700 dark:text-gray-200">
                         {message.description}
                     </p>
                 </div>

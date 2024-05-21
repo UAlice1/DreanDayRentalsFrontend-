@@ -1,15 +1,12 @@
 import React from 'react';
 import About  from '../assets/pages/About';
 import Service from '../assets/pages/Service';
-import Footer from '../assets/pages/Footer';
 import Available from '../assets/pages/Available';
 import Contact from '../assets/pages/Contact'
-
-
+import Bookings from '../assets/pages/Bookings';
 function Home() {
   return (
     <div>
-
     <div className="video-background bg-black/75 flex justify-center items-center z-0 p-11">
       <video autoPlay muted loop id="video-background" className="absolute inset-0 w-full h-full object-cover object-fit">
         <source src="/video.mp4" type="video/mp4" />
@@ -31,11 +28,9 @@ function Home() {
     <About/>
     <Service/>
     <Available />
+    <Bookings />
     <Contact/>
-    <Footer/>
     </div>
-  
-
   )
 }
 

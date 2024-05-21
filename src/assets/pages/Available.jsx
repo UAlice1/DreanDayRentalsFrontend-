@@ -1,54 +1,42 @@
 import React from 'react'
-function Footer() {
+
+function Available() {
   return (
-    <div>
-      <div className='Available flex flex-col items-center'>
-  <p className='text-3xl mt-10 font-sans italic'>Our available halls</p>
-  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6'>
-    <div className='card1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between ml-[5vh]'>
-      <img className='w-full h-94 w-[80vh] object-cover' src='public/images/des8.jpg' alt='Hall 3' />
-      <div className='p-4 flex-grow'>
-        <a href='#' className='bg-[#A6C1EE] hover:bg-[#A6C1EE] text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
+<div className="available text-center p-8">
+  <h2 className="text-3xl mb-16">Available Halls</h2>
+  <div className="flex flex-wrap justify-center gap-4">
+    <div className="card bg-white rounded-lg shadow-lg p-4 max-w-sm w-full md:w-1/3">
+      <img className="w-full h-56 object-cover rounded-t-lg" src="/public/images/des8.jpg" alt="hall1" />
+      <div className="mt-4">
+        <span className="block text-gray-700">Location: Kigali</span>
+        <span className="block text-gray-700">price:frw</span>
+        <span className="block text-gray-700">Max: 200 people</span>
+        <a href="#" className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-center">Book now</a>
       </div>
     </div>
-    <div className='card1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between mr-[5vh]'>
-      <img className='w-full h-[90vh] w-[80vh] object-cover' src='public/images/des3.jpg' alt='Hall 3' />
-      <div className='p-4 flex-grow'>
-        <a href='#' className='bg-[#A6C1EE] hover:bg-[#A6C1EE] text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
+    <div className="card bg-white rounded-lg shadow-lg p-4 max-w-sm w-full md:w-1/3">
+      <img className="w-full h-56 object-cover rounded-t-lg" src="/public/images/des4.jpg" alt="hall1" />
+      <div className="mt-4">
+        <span className="block text-gray-700">Location: Kigali</span>
+        <span className="block text-gray-700">price:frw</span>
+        <span className="block text-gray-700">Max: 200 people</span>
+        <a href="#" className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-center">Book now</a>
       </div>
     </div>
-    <div className='card1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between mr-[5vh]'>
-      <img className='w-full h-[90vh] w-[80vh] object-cover' src='public/images/des4.jpg' alt='Hall 3' />
-      <div className='p-4 flex-grow'>
-        <a href='#' className='bg-[#A6C1EE] hover:bg-[#A6C1EE] text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
-      </div>
-    </div>
-  </div>
-</div><br/>
-<div className='Available flex flex-col items-center'>
-  <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6'>
-    <div className='card1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between ml-[5vh]'>
-      <img className='w-full h-94 w-[80vh] object-cover' src='public/images/des6.jpg' alt='Hall 3' />
-      <div className='p-4 flex-grow'>
-        <a href='#' className='bg-[#A6C1EE] hover:bg-[#A6C1EE] text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
-      </div>
-    </div>
-    <div className='card1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between mr-[5vh]'>
-      <img className='w-full h-94 w-[80vh] object-cover' src='public/images/des4.jpg' alt='Hall 3' />
-      <div className='p-4 flex-grow'>
-        <a href='#' className='bg-[#A6C1EE] hover:bg-[#A6C1EE] text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
-      </div>
-    </div>
-    <div className='card1 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col justify-between mr-[5vh]'>
-      <img className='w-full h-94 w-[80vh] object-cover' src='public/images/des5.jpg' alt='Hall 3' />
-      <div className='p-4 flex-grow'>
-        <a href='#' className='bg-[#A6C1EE] hover:bg-[#A6C1EE] text-white font-bold py-2 px-4 rounded block text-center'>Book Now</a>
+    <div className="card bg-white rounded-lg shadow-lg p-4 max-w-sm w-full md:w-1/3">
+      <img className="w-full h-56 object-cover rounded-t-lg" src="/public/images/des3.jpg" alt="hall1" />
+      <div className="mt-4">
+        <span className="block text-gray-700">Location: Kigali</span>
+        <span className="block text-gray-700">price:frw</span>
+        <span className="block text-gray-700">Max: 200 people</span>
+        <a href="#" className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-center">Book now</a>
       </div>
     </div>
   </div>
 </div>
-    </div>
+
   )
 }
-export default Footer
+
+export default Available
 

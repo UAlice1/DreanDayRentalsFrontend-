@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { GoPeople } from "react-icons/go";
 import { SiSanfranciscomunicipalrailway } from "react-icons/si";
+import { Link } from 'react-router-dom'; // Assuming you are using React Router
 
 const BookingPage = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +16,8 @@ const BookingPage = () => {
   });
 
   const [showSecondImage, setShowSecondImage] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false); // Example state to check if user is signed in
+  const [showSignInMessage, setShowSignInMessage] = useState(false); // State to handle the sign-in message
 
   const isFormValid = () => {
     return (
@@ -36,6 +39,10 @@ const BookingPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isSignedIn) {
+      setShowSignInMessage(true);
+      return;
+    }
     if (isFormValid()) {
       console.log(formData);
     } else {
@@ -48,14 +55,14 @@ const BookingPage = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center p-4">
+    <div className="flex justify-center items-center h-screen">
       <div className="md:w-3/5 p-4 border border-gray-300 rounded-xl mt-10 md:mr-5">
         <img src={showSecondImage ? "/images/des6.jpg" : "/images/des9.jpg" } alt="Hall" className="h-64 md:h-80 w-full rounded-xl object-cover"/>
         <div className="mt-4">
           <h2 className="text-lg font-semibold">Luxurious Event Hall</h2>
-          <h1 className="flex items-center mt-2"><FaLocationDot className="mr-2" /> Kigalo city</h1>
+          <h1 className="flex items-center mt-2"><FaLocationDot className="mr-2" /> Kigali city</h1>
           <div className="flex flex-col md:flex-row justify-between mt-2">
-            <p className="text-sm text-gray-600 flex items-center mb-2 md:mb-0"><FaLocationDot className="mr-2" /> Convetion centre, Central Plaza</p>
+            <p className="text-sm text-gray-600 flex items-center mb-2 md:mb-0"><FaLocationDot className="mr-2" /> Convention centre, Central Plaza</p>
             <p className="text-sm text-gray-600 flex items-center mb-2 md:mb-0"><GoPeople className="mr-2" /> 200 per/people</p>
             <p className="text-sm text-gray-600 flex items-center"><SiSanfranciscomunicipalrailway className="mr-2" /> Renting Cost: $5000/day</p>
           </div>
@@ -92,12 +99,18 @@ const BookingPage = () => {
             <button type="submit" className="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600">Book Now</button>
           </div>
         </form>
+        {showSignInMessage && (
+          <div className="mt-4 text-center text-blue-500">
+            Please <Link to="/signin" className="underline text-indigo-500">sign in</Link> to book an event.
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
 export default BookingPage;
+
 
 
 

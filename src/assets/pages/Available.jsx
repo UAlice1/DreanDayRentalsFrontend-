@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 function Available() {
   return (
 <div className="available text-center p-8">
@@ -11,7 +11,10 @@ function Available() {
         <span className="block text-gray-700">Location: Kigali</span>
         <span className="block text-gray-700">price:frw</span>
         <span className="block text-gray-700">Max: 200 people</span>
-        <a href="#" className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-center">Book now</a>
+        <button className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded w-full hover:bg-blue-600 text-center">
+          
+          <Link to="/Bookings">Book now</Link>
+          </button>
       </div>
     </div>
     <div className="card bg-white rounded-lg shadow-lg p-4 max-w-sm w-full md:w-1/3">
@@ -20,7 +23,9 @@ function Available() {
         <span className="block text-gray-700">Location: Kigali</span>
         <span className="block text-gray-700">price:frw</span>
         <span className="block text-gray-700">Max: 200 people</span>
-        <a href="#" className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-center">Book now</a>
+        <button className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded w-full hover:bg-blue-600 text-center">
+        <Link to="/Bookings">Book now</Link>
+          </button>
       </div>
     </div>
     <div className="card bg-white rounded-lg shadow-lg p-4 max-w-sm w-full md:w-1/3">
@@ -29,7 +34,9 @@ function Available() {
         <span className="block text-gray-700">Location: Kigali</span>
         <span className="block text-gray-700">price:frw</span>
         <span className="block text-gray-700">Max: 200 people</span>
-        <a href="#" className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 text-center">Book now</a>
+        <button className="block mt-4 bg-blue-500 text-white py-2 px-4 rounded w-full hover:bg-blue-600 text-center">
+        <Link to="/Bookings">Book now</Link>
+          </button>
       </div>
     </div>
   </div>

@@ -3,7 +3,7 @@ import About  from '../assets/pages/About';
 import Service from '../assets/pages/Service';
 import Available from '../assets/pages/Available';
 import Contact from '../assets/pages/Contact'
-import Bookings from '../assets/pages/Bookings';
+import Gallery from '../Components/Gallery';
 function Home() {
   return (
     <div>
@@ -28,7 +28,7 @@ function Home() {
     <About/>
     <Service/>
     <Available />
-    <Bookings />
+    <Gallery/>
     <Contact/>
     </div>
   )

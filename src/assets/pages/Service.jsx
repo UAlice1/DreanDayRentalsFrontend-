@@ -1,7 +1,7 @@
 import React from 'react';
 function Service() {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="">
     <div className="flex flex-col justify-center items-center w-full">
       <p className="text-3xl mt-10 font-sans italic text-center">Our Services</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 w-full">
@@ -21,7 +21,7 @@ function Service() {
           <p className="text-base text-center">Enhance your venue with our stunning floral arrangements, crafted to add elegance and charm to your wedding.</p>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center">
-          <img src="public/images/cake.png" className="w-16 h-16 mb-4" alt="Cake Icon" />
+          <img src="public/images/cake.jpg" className="w-16 h-16 mb-4" alt="Cake Icon" />
           <h3 className="text-xl font-bold mb-2">Catering & Cakes</h3>
           <p className="text-base text-center">Delight your guests with our exquisite catering services and beautifully designed wedding cakes.</p>
         </div>

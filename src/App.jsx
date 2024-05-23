@@ -10,6 +10,7 @@ import Service from './assets/pages/Service';
 import Contact from './assets/pages/Contact';
 import About from './assets/pages/About';
 import Bookings from './assets/pages/Bookings';
+import Gallery from './Components/Gallery';
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
           <Route path='/signin' element={<Signin />} />
           <Route path='/signup' element={<SignUp />} />
           <Route path="/" element={<Home />} />
+          <Route path="/" element={<Gallery />} />
           <Route path="/Auth" element={<Auth />} />
           <Route path="/Service" element={<Service />} />
           <Route path="/Contact" element={<Contact />} />
